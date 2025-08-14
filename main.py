@@ -1,13 +1,25 @@
-# ask user to input the  the 3 sides of a triangle
-x= float(input("Enter the first side:\n"))
-y= float(input("Enter the second side:\n"))
-z= float(input("Enter the third side:\n"))
-#if all sides are equal print Equilateral
-if x==y and y==z:
-    print(f"The triangle is an equilateral")
-#if 2 sides are equal print Isosceles
-elif x==y or x==z or y==z:
-    print(f"The triangle is an isosceles")
-#if no sides are equal print scalene
-else:
-    print(f"The triangle is a scalene")
+# use loop to calculate the sum of the numbers below
+#numbers = [10, 5, 8, 15]
+#total_sum= 0
+
+#for num in numbers:
+    #total_sum += num
+#print(total_sum)
+# define a function add task
+
+import add
+import show
+import update
+import delete
+
+add_task_response= add.add_task("sleep")
+print(add_task_response)
+
+show_task_response= show.show_task()
+print(show_task_response)
+
+update_task_response= update.update_task("sleep", "wake up")
+print(update_task_response)
+
+delete_task_response= delete.delete_task("wake up")
+print(delete_task_response)
